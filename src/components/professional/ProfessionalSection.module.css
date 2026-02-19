@@ -9,7 +9,78 @@
   margin-bottom: 1rem;
 }
 
-.placeholder {
-  font-size: 1rem;
-  color: #cccccc;
+/* grid container holding up to 9 links */
+.linkGrid {
+  display: grid;
+  /* always three columns, each taking equal space */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  max-width: 60rem; /* allow some extra room for bigger icons */
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  justify-items: center; /* center items in their tracks */
 }
+
+/* ensure each box doesn't stretch too far */
+.linkItem {
+  width: 100%;
+  max-width: 14rem;
+}
+
+
+.linkItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: transparent;
+  border: 2px solid #0077b5;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  color: #0077b5; /* blue text to match border */
+  transition: background-color 0.2s, box-shadow 0.2s, color 0.2s;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.linkItem:hover,
+.linkItem:focus {
+  background-color: rgba(0, 119, 181, 0.1); /* subtle blue fill */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+  color: #005582;
+}
+
+.iconWrapper {
+  margin-bottom: 0.5rem;
+  display: block;
+  width: 80px; /* increased size so badge text is legible */
+  height: 80px;
+}
+
+/* bigger badge images for AWS cert tiles */
+.badgeIcon {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  display: block;
+}
+
+/* linkedin SVG sizing */
+.linkedinIcon {
+  width: 80%;
+  height: 80%;
+  display: block;
+  margin: auto;
+}
+
+.linkLabel {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.emptyCell {
+  visibility: hidden;
+}
+
+

@@ -1,4 +1,3 @@
-import CertificationBadges from '../certifications/CertificationBadges';
 import styles from './HeroSection.module.css';
 
 
@@ -35,8 +34,6 @@ export default function HeroSection() {
         </a>
         .
       </p>
-
-      <CertificationBadges />
     </section>
   );
 }

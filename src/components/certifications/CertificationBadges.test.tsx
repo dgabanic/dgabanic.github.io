@@ -6,10 +6,10 @@ describe('CertificationBadges', () => {
     render(<CertificationBadges />);
   });
 
-  it('renders the AWS Cloud Practitioner badge with correct src and alt', () => {
-    const img = screen.getByAltText('AWS Certified Cloud Practitioner badge');
+  it('renders the AWS Certified Developer badge with correct src and alt', () => {
+    const img = screen.getByAltText('AWS Certified Developer badge');
     expect(img).toBeInTheDocument();
-    expect(img).toHaveAttribute('src', '/images/aws-certified-cloud-practitioner.png');
+    expect(img).toHaveAttribute('src', '/images/aws-certified-developer-associate.png');
   });
 
   it('renders the AWS Solutions Architect Associate badge with correct src and alt', () => {
