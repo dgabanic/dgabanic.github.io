@@ -4,14 +4,14 @@
   width: 100%;
 }
 
-.headshot {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
+/* banner replaces the previous headshot; it spans the full width */
+.banner {
+  width: 100%;
+  height: auto;
   object-fit: cover;
   margin-bottom: 1.5rem;
-  border: 3px solid #58a6ff;
 }
+
 
 .heading {
   font-size: 2.5rem;

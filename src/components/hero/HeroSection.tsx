@@ -6,9 +6,9 @@ export default function HeroSection() {
   return (
     <section id="home" className={styles.heroSection}>
       <img
-        src="/images/headshot.png"
-        alt="David Gabanic"
-        className={styles.headshot}
+        src="/images/banner.jpeg"
+        alt="Banner Image"
+        className={styles.banner}
       />
       <h1 className={styles.heading}>Welcome!</h1>
       <h2 className={styles.subheading}>
@@ -20,7 +20,7 @@ export default function HeroSection() {
       </p>
 
       <p className={styles.bio}>
-      Have a look around! I wanted to make this site to show my professional experiece and accomplishments, but also to give an insight into who I am as a person
+      Have a look around! I wanted to make this site to show my professional experiece and accomplishments, but also to give an insight into who I am as a person.
       </p>
 
       <p className={styles.bio}>

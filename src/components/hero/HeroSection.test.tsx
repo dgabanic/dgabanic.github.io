@@ -29,4 +29,9 @@ describe('HeroSection', () => {
     expect(link).toHaveAttribute('target', '_blank');
     expect(link).toHaveAttribute('rel', 'noopener noreferrer');
   });
+
+  it('includes the banner image instead of a headshot', () => {
+    const img = screen.getByRole('img', { name: /banner/i });
+    expect(img).toHaveAttribute('src', '/images/banner.jpeg');
+  });
 });
