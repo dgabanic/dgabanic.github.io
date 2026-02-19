@@ -17,3 +17,5 @@ jobs:
         with:
           publish_dir: ./dist
           publish_branch: gh-pages
+          # provide a token so the action can push to the repository
+          github_token: ${{ secrets.GITHUB_TOKEN }}
