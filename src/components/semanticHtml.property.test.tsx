@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react';
 import fc from 'fast-check';
-import HeroSection from './HeroSection';
+import HeroSection from './hero/HeroSection';
 import ProfessionalSection from './ProfessionalSection';
 import PersonalSection from './PersonalSection';
 

@@ -2,8 +2,8 @@ import styles from './CertificationBadges.module.css';
 
 const badges = [
   {
-    src: '/images/aws-certified-cloud-practitioner.png',
-    alt: 'AWS Certified Cloud Practitioner badge',
+    src: '/images/aws-certified-developer-associate.png',
+    alt: 'AWS Certified Developer badge',
   },
   {
     src: '/images/aws-certified-solutions-architect-associate.png',

@@ -1,6 +1,6 @@
+import CertificationBadges from '../certifications/CertificationBadges';
 import styles from './HeroSection.module.css';
 
-import CertificationBadges from './CertificationBadges';
 
 export default function HeroSection() {
   return (
@@ -16,15 +16,11 @@ export default function HeroSection() {
       </h2>
 
       <p className={styles.bio}>
-        I graduated from the University of Cincinnati in 2018 with a degree in
-        Computer Science. Since then, I have been working as a full stack
-        software engineer, building and maintaining web applications across the
-        entire stack.
+      I graduated from the University of Cincinnati in 2018 with a Bachelor's degree in Computer Science. Since then I have obtained full stack experience with multiple enterprise-level applications in both legacy codebases and modern cloud stacks. I have also earned multiple AWS Certifications. 
       </p>
 
       <p className={styles.bio}>
-        I hold multiple AWS certifications and enjoy leveraging cloud services
-        to build scalable, reliable solutions.
+      Have a look around! I wanted to make this site to show my professional experiece and accomplishments, but also to give an insight into who I am as a person
       </p>
 
       <p className={styles.bio}>

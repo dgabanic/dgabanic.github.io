@@ -1,8 +1,8 @@
 import styles from './App.module.css';
-import Navbar from './components/Navbar';
-import HeroSection from './components/HeroSection';
-import ProfessionalSection from './components/ProfessionalSection';
-import PersonalSection from './components/PersonalSection';
+import Navbar from './components/navbar/Navbar';
+import HeroSection from './components/hero/HeroSection';
+import ProfessionalSection from './components/professional/ProfessionalSection';
+import PersonalSection from './components/personal/PersonalSection';
 
 function App() {
   return (
