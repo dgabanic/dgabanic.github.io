@@ -1,8 +1,8 @@
 import { render } from '@testing-library/react';
 import fc from 'fast-check';
 import HeroSection from './hero/HeroSection';
-import ProfessionalSection from './ProfessionalSection';
-import PersonalSection from './PersonalSection';
+import ProfessionalSection from './professional/ProfessionalSection';
+import PersonalSection from './personal/PersonalSection';
 
 /**
  * Feature: angular-to-react-refactor, Property 1: Semantic HTML structure
