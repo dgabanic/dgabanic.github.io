@@ -1,30 +1,90 @@
-# TODO
-# Migrate tasklist to... somwhere
+# David Gabanic Portfolio Website
 
-# AboutMe
+This repository hosts a personal portfolio site built with **React** (TypeScript) and **Vite**. It was originally generated using Angular CLI but has since been completely rewritten as a static SPA that showcases professional experience, certifications, and personal information.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.0.
+## Key details
 
-## Development server
+- **Framework:** React 18 with functional components
+- **Language:** TypeScript
+- **Tooling:** Vite for development/build, Vitest + Testing Library for unit tests
+- **Styling:** CSS Modules
+- **Deployment target:** GitHub Pages (static assets under `dist/`)
+- **Assets:** images live in `public/images` (including `banner.jpeg`, `headshot.png`, etc.)
+- **Structure:**
+  - `src/main.tsx` bootstraps the app
+  - `src/components` contains reusable pieces (hero, navbar, sections, etc.)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Getting started
 
-## Code scaffolding
+### Prerequisites
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Node.js 18+ (or current LTS)
+- npm or yarn
 
-## Build
+### Install dependencies
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```bash
+npm install
+# or
+# yarn install
+```
 
-## Running unit tests
+### Development server
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Start a hot-reloading dev server:
 
-## Running end-to-end tests
+```bash
+npm run dev
+# or
+# yarn dev
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Open `http://localhost:5173` in your browser (port may vary). Changes to source files will reload automatically.
 
-## Further help
+### Building for production
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```bash
+npm run build
+# or
+# yarn build
+```
+
+The optimized static files appear in the `dist/` directory, ready to be pushed to GitHub Pages or any static host.
+
+### Previewing a production build
+
+```bash
+npm run preview
+```
+
+This serves the contents of `dist/` locally.
+
+### Unit tests
+
+Vitest is configured for the project. Run all tests with:
+
+```bash
+npm test
+# or
+# yarn test
+```
+
+Tests are located alongside components and use `@testing-library/react`.
+
+## Project notes
+
+- The hero section uses a banner image by default; swap `public/images/banner.jpeg` to change it.
+- CSS modules are used to scope styles (`*.module.css`).
+- Routing is minimal and handled by in-page anchors.
+
+## TODOs / future work
+
+- Migrate `tasklist.txt` into a more appropriate issue tracker or markdown file
+- Add E2E tests if needed (Cypress, Playwright, etc.)
+
+## Help & links
+
+For Vite issues, see https://vitejs.dev/
+For React documentation, visit https://reactjs.org/
+
+Any other questions can be addressed by opening an issue in this repository or contacting me directly via LinkedIn.
