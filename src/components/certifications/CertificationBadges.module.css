@@ -1,0 +1,12 @@
+.badgesContainer {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.badge {
+  width: 150px;
+  height: auto;
+}
