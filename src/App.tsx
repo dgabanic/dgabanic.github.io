@@ -30,14 +30,14 @@ function App() {
       <Navbar>
         <button
           style={{
-            marginLeft: '2rem',
+            marginLeft: 'clamp(0.5rem, 5vw, 2rem)',
             padding: '0.4rem 1rem',
             borderRadius: '1rem',
             border: 'none',
             background: theme === 'dark' ? '#444' : '#eee',
             color: theme === 'dark' ? '#fff' : '#222',
             cursor: 'pointer',
-            fontSize: '1rem',
+            fontSize: '0.875rem',
             boxShadow: '0 2px 8px rgba(0,0,0,0.08)'
           }}
           aria-label={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
