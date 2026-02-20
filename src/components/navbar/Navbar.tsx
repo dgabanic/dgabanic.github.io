@@ -6,7 +6,11 @@ const navLinks = [
   { label: 'Personal', targetId: 'personal' },
 ];
 
-export default function Navbar() {
+interface NavbarProps {
+  children?: React.ReactNode;
+}
+
+export default function Navbar({ children }: NavbarProps) {
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
     e.preventDefault();
     const element = document.getElementById(targetId);
@@ -27,6 +31,7 @@ export default function Navbar() {
           {link.label}
         </a>
       ))}
+      {children}
     </nav>
   );
 }
