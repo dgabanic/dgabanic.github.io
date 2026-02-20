@@ -38,6 +38,9 @@
   padding: 1rem;
   background-color: transparent;
   border: 2px solid #0077b5;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
   border-radius: 0.25rem;
   text-decoration: none;
   color: #0077b5; /* blue text to match border */
