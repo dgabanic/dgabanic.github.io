@@ -101,6 +101,7 @@
   .linkItem {
     max-width: none;
     width: 100%;
+    height: 160px;
   }
 
   .iconWrapper {
