@@ -6,15 +6,11 @@ const ITEMS: Array<{ href: string; label: string; icon?: JSX.Element }> = [
     href: 'https://www.linkedin.com/in/dgabanic',
     label: 'Connect on LinkedIn',
     icon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 448 512"
-        fill="currentColor"
-        aria-hidden="true"
-      >
-        {/* official LinkedIn “in” logo */}
-        <path d="M100.28 448H7.4V149.6h92.88zm-46.44-338C24 110 0 86 0 56.6 0 26.3 24.06 0 53.62 0s53.63 26.3 53.63 56.6c0 29.4-24 53.4-53.7 53.4zm394.52 338h-92.7V302c0-34.7-12.4-58.3-43.3-58.3-23.6 0-37.6 15.9-43.8 31.3-2.3 5.7-2.9 13.6-2.9 21.4v151.6h-92.7V149.6h92.7v40.9c12.3-19 34.4-46.1 83.6-46.1 61.1 0 106.9 39.9 106.9 125.6z" />
-      </svg>
+      <img
+        src="/images/linkedinlogo.png"
+        alt="LinkedIn logo"
+        className={styles.badgeIcon}
+      />
     ),
   },
   {
