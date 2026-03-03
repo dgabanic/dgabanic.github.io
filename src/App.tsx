@@ -7,9 +7,10 @@ import HeroSection from './components/hero/HeroSection';
 import ProfessionalSection from './components/professional/ProfessionalSection';
 import PersonalSection from './components/personal/PersonalSection';
 import ReadingList from './components/books/ReadingList';
+import TravelMap from './components/map/TravelMap';
 
 type Theme = 'light' | 'dark';
-type Page = 'home' | 'books';
+type Page = 'home' | 'books' | 'map';
 
 function App() {
   const [page, setPage] = useState<Page>('home');
@@ -63,6 +64,8 @@ function App() {
           </>
         ) : page === 'books' ? (
           <ReadingList onBack={() => navigateTo('home')} />
+        ) : page === 'map' ? (
+          <TravelMap onBack={() => navigateTo('home')} />
         ) : null}
       </main>
     </>

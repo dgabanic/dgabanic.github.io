@@ -1,0 +1,11 @@
+[
+  {
+    "id": 1,
+    "name": "Inverness",
+    "category": "travel",
+    "lat": 57.47402498217785,
+    "lng": -4.226396251494359,
+    "description": "The Scottish Highlands",
+    "image": "/images/destinations/inverness.jpg"
+  }
+]

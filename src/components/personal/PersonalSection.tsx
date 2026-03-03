@@ -21,6 +21,7 @@ interface PersonalSectionProps {
 
 const INTERNAL_ITEMS: Array<{ page: string; label: string }> = [
   { page: 'books', label: '📚 Reading List' },
+  { page: 'map', label: '🌍 Travel Map' },
 ];
 
 export default function PersonalSection({ onNavigate }: PersonalSectionProps) {
