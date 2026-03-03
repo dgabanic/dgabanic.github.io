@@ -6,6 +6,13 @@
     "lat": 57.47402498217785,
     "lng": -4.226396251494359,
     "description": "The Scottish Highlands",
-    "image": "/images/destinations/inverness.jpg"
+    "images": ["/images/destinations/inverness1.jpg", "/images/destinations/inverness2.jpg"]
+  },
+  {
+    "id": 2,
+    "name": "Nervous Dog Coffee Bar",
+    "category": "coffee",
+    "lat": 41.13642226502347,
+    "lng": -81.63591450245397
   }
 ]

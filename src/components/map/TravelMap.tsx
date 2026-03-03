@@ -5,11 +5,14 @@ import 'leaflet/dist/leaflet.css';
 import styles from './TravelMap.module.css';
 import destinations from '../../data/destinations.json';
 
-type Category = 'all' | 'travel' | 'cafe';
+type Category = 'all' 
+| 'travel' 
+| 'coffee'
+;
 
 const CATEGORY_COLORS: Record<string, string> = {
-  travel: '#e74c3c',
-  cafe: '#f39c12',
+  travel: 'yellow',
+  coffee: 'brown',
 };
 
 function createIcon(category: string) {
@@ -33,7 +36,10 @@ export default function TravelMap({ onBack }: TravelMapProps) {
     ? destinations
     : destinations.filter((d) => d.category === filter);
 
-  const categories: Category[] = ['all', 'travel', 'cafe'];
+  const categories: Category[] = ['all'
+    , 'travel'
+    , 'coffee'
+  ];
 
   return (
     <section className={styles.wrapper}>
@@ -66,13 +72,18 @@ export default function TravelMap({ onBack }: TravelMapProps) {
           />
           {filtered.map((dest) => (
             <Marker key={dest.id} position={[dest.lat, dest.lng]} icon={createIcon(dest.category)}>
-              <Popup maxWidth={260}>
-                {'image' in dest && dest.image && (
-                  <img
-                    src={dest.image as string}
-                    alt={dest.name}
-                    className={styles.popupImage}
-                  />
+              <Popup maxWidth={420}>
+                {'images' in dest && dest.images && dest.images.length > 0 && (
+                  <div className={styles.imageScroll}>
+                    {(dest.images as string[]).map((img, idx) => (
+                      <img
+                        key={idx}
+                        src={img}
+                        alt={`${dest.name} ${idx + 1}`}
+                        className={styles.popupImage}
+                      />
+                    ))}
+                  </div>
                 )}
                 <strong>{dest.name}</strong>
                 <br />

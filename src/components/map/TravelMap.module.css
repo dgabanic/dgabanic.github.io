@@ -72,12 +72,40 @@
   border: none !important;
 }
 
+.imageScroll {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  margin-bottom: 0.4rem;
+  padding: 0.2rem 0;
+  -webkit-overflow-scrolling: touch;
+}
+
+.imageScroll::-webkit-scrollbar {
+  height: 4px;
+}
+
+.imageScroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.imageScroll::-webkit-scrollbar-thumb {
+  background: rgba(128, 128, 128, 0.3);
+  border-radius: 2px;
+}
+
+.imageScroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(128, 128, 128, 0.5);
+}
+
 .popupImage {
-  width: 100%;
-  max-height: 150px;
+  flex-shrink: 0;
+  width: 214px;
+  height: 380px;
   object-fit: cover;
   border-radius: 0.4rem;
-  margin-bottom: 0.4rem;
   display: block;
 }
 
