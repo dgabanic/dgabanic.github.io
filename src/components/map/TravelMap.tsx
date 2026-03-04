@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import { useState, useRef } from 'react';
+import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import styles from './TravelMap.module.css';
@@ -23,6 +23,26 @@ function createIcon(category: string) {
     iconSize: [14, 14],
     iconAnchor: [7, 7],
   });
+}
+
+function FlyToMarker({ lat, lng, children, icon }: { lat: number; lng: number; children: React.ReactNode; icon: L.DivIcon }) {
+  const map = useMap();
+  const markerRef = useRef<L.Marker>(null);
+
+  return (
+    <Marker
+      ref={markerRef}
+      position={[lat, lng]}
+      icon={icon}
+      eventHandlers={{
+        click: () => {
+          map.flyTo([lat, lng], 12, { duration: 1.2 });
+        },
+      }}
+    >
+      {children}
+    </Marker>
+  );
 }
 
 interface TravelMapProps {
@@ -71,8 +91,8 @@ export default function TravelMap({ onBack }: TravelMapProps) {
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
           {filtered.map((dest) => (
-            <Marker key={dest.id} position={[dest.lat, dest.lng]} icon={createIcon(dest.category)}>
-              <Popup maxWidth={420}>
+            <FlyToMarker key={dest.id} lat={dest.lat} lng={dest.lng} icon={createIcon(dest.category)}>
+              <Popup maxWidth={260} className={styles.compactPopup}>
                 {'images' in dest && dest.images && dest.images.length > 0 && (
                   <div className={styles.imageScroll}>
                     {(dest.images as string[]).map((img, idx) => (
@@ -90,7 +110,7 @@ export default function TravelMap({ onBack }: TravelMapProps) {
                 <span style={{ fontSize: '0.85em', opacity: 0.8 }}>{dest.category}</span>
                 {dest.description && <><br /><em>{dest.description}</em></>}
               </Popup>
-            </Marker>
+            </FlyToMarker>
           ))}
         </MapContainer>
       </div>

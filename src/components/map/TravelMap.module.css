@@ -74,17 +74,17 @@
 
 .imageScroll {
   display: flex;
-  gap: 0.5rem;
+  gap: 0.35rem;
   overflow-x: auto;
   overflow-y: hidden;
   scroll-behavior: smooth;
   margin-bottom: 0.4rem;
-  padding: 0.2rem 0;
+  padding: 0.15rem 0;
   -webkit-overflow-scrolling: touch;
 }
 
 .imageScroll::-webkit-scrollbar {
-  height: 4px;
+  height: 3px;
 }
 
 .imageScroll::-webkit-scrollbar-track {
@@ -102,10 +102,10 @@
 
 .popupImage {
   flex-shrink: 0;
-  width: 214px;
-  height: 380px;
+  width: 90px;
+  height: 120px;
   object-fit: cover;
-  border-radius: 0.4rem;
+  border-radius: 0.3rem;
   display: block;
 }
 

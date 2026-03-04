@@ -9,11 +9,12 @@ import PersonalSection from './components/personal/PersonalSection';
 import ReadingList from './components/books/ReadingList';
 import TravelMap from './components/map/TravelMap';
 import FavoritesList from './components/favorites/FavoritesList';
+import Schedules from './components/schedules/Schedules';
 import favoriteBeers from './data/favoriteBeers';
 import favoriteJerseys from './data/favoriteJerseys';
 
 type Theme = 'light' | 'dark';
-type Page = 'home' | 'books' | 'map' | 'beers' | 'jerseys';
+type Page = 'home' | 'books' | 'map' | 'beers' | 'jerseys' | 'schedules';
 
 function App() {
   const [page, setPage] = useState<Page>('home');
@@ -73,6 +74,8 @@ function App() {
           <FavoritesList heading="Favorite Beers" emoji="🍺" items={favoriteBeers} onBack={() => navigateTo('home')} />
         ) : page === 'jerseys' ? (
           <FavoritesList heading="Favorite Soccer Jerseys" emoji="⚽" items={favoriteJerseys} onBack={() => navigateTo('home')} />
+        ) : page === 'schedules' ? (
+          <Schedules onBack={() => navigateTo('home')} />
         ) : null}
       </main>
     </>

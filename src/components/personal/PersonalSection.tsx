@@ -22,6 +22,7 @@ interface PersonalSectionProps {
 const INTERNAL_ITEMS: Array<{ page: string; label: string }> = [
   { page: 'books', label: '📚 Reading List' },
   { page: 'map', label: '🌍 Travel Map' },
+  { page: 'schedules', label: '🏟️ Sports Schedules' },
   // { page: 'beers', label: '🍺 Favorite Beers' },
   // { page: 'jerseys', label: '⚽ Favorite Jerseys' },
 ];
