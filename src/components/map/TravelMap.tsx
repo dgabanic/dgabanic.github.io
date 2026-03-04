@@ -6,12 +6,12 @@ import styles from './TravelMap.module.css';
 import destinations from '../../data/destinations.json';
 
 type Category = 'all' 
-| 'travel' 
+| 'travel log' 
 | 'coffee'
 ;
 
 const CATEGORY_COLORS: Record<string, string> = {
-  travel: 'yellow',
+  'travel log': 'yellow',
   coffee: 'brown',
 };
 
@@ -57,7 +57,7 @@ export default function TravelMap({ onBack }: TravelMapProps) {
     : destinations.filter((d) => d.category === filter);
 
   const categories: Category[] = ['all'
-    , 'travel'
+    , 'travel log'
     , 'coffee'
   ];
 

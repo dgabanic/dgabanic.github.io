@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Inverness",
-    "category": "travel",
+    "category": "travel log",
     "lat": 57.47402498217785,
     "lng": -4.226396251494359,
     "description": "The Scottish Highlands",
@@ -19,7 +19,7 @@
   {
     "id": 3,
     "name": "Aruba",
-    "category": "travel",
+    "category": "travel log",
     "lat": 12.58064,
     "lng": -70.04476,
     "images": ["/images/destinations/aruba1.jpg"]
@@ -27,7 +27,7 @@
   {
     "id": 4,
     "name": "Amsterdam",
-    "category": "travel",
+    "category": "travel log",
     "lat": 52.37732341199218,
     "lng":  4.8954031416862485,
     "images": ["/images/destinations/amsterdam1.jpg", "/images/destinations/amsterdam2.jpg", "/images/destinations/amsterdam3.jpg"]
@@ -35,7 +35,7 @@
   {
     "id": 5,
     "name": "Maui",
-    "category": "travel",
+    "category": "travel log",
     "lat": 20.922812672013716,
     "lng": -156.69447271861998,
     "images": ["/images/destinations/hawaii1.jpg"]
@@ -43,7 +43,7 @@
   {
     "id": 6,
     "name": "Banff",
-    "category": "travel",
+    "category": "travel log",
     "lat": 51.17839446603472,
     "lng": -115.57070187490504,
     "images": ["/images/destinations/banff1.jpg", "/images/destinations/banff2.jpg"]
@@ -51,7 +51,7 @@
   {
     "id": 7,
     "name": "Zurich",
-    "category": "travel",
+    "category": "travel log",
     "lat": 47.37838395495321,
     "lng": 8.540456084052044,
     "images": ["/images/destinations/zurich1.jpg", "/images/destinations/zurich2.jpg"]
@@ -59,7 +59,7 @@
   {
     "id": 8,
     "name": "Edinburgh",
-    "category": "travel",
+    "category": "travel log",
     "lat": 55.94859906375512,
     "lng": -3.199364144470726,
     "images": ["/images/destinations/edinburgh1.jpg", "/images/destinations/edinburgh2.jpg"]
@@ -67,7 +67,7 @@
   {
     "id": 9,
     "name": "Dublin",
-    "category": "travel",
+    "category": "travel log",
     "lat": 53.34928501747373,
     "lng": -6.257750500570806,
     "images": ["/images/destinations/dublin1.jpg"]
@@ -75,7 +75,7 @@
   {
     "id": 10,
     "name": "Munich",
-    "category": "travel",
+    "category": "travel log",
     "lat": 48.13512532043476,
     "lng": 11.582099609375,
     "images": ["/images/destinations/munich1.jpg"]
@@ -83,7 +83,7 @@
   {
     "id": 11,
     "name": "Bern",
-    "category": "travel",
+    "category": "travel log",
     "lat": 46.94809221191406,
     "lng": 7.447435569763184,
     "images": ["/images/destinations/bern1.jpg"]
@@ -91,7 +91,7 @@
   {
     "id": 12,
     "name": "Lucerne",
-    "category": "travel",
+    "category": "travel log",
     "lat": 47.05018023498535,
     "lng": 8.309557113647461,
     "images": ["/images/destinations/lucerne1.jpg"]
@@ -99,7 +99,7 @@
   {
     "id": 13,
     "name": "Cincinnati",
-    "category": "travel",
+    "category": "travel log",
     "lat": 39.10318724365234,
     "lng": -84.51240844726562,
     "images": ["/images/destinations/cincinnati1.jpg", "/images/destinations/cincinnati2.jpg"]
@@ -107,9 +107,121 @@
   {
     "id": 14,
     "name": "Grand Rapids",
-    "category": "travel",
+    "category": "travel log",
     "lat": 42.96335998535156,
     "lng": -85.66802215576172,
     "images": ["/images/destinations/grandrapids1.jpg"]
+  },
+  {
+    "id": 15,
+    "name": "San Francisco",
+    "category": "travel log",
+    "lat": 37.7749295,
+    "lng": -122.4194155
+  },
+  {
+    "id": 16,
+    "name": "Modesto",
+    "category": "travel log",
+    "lat": 37.629207367310876,
+    "lng": -120.97517173814056
+  },
+  {
+    "id": 17,
+    "name": "Las Vegas",
+    "category": "travel log",
+    "lat": 36.12190778162865,
+    "lng": -115.16934277607982
+  },
+  {
+    "id": 18,
+    "name": "Grand Cayman",
+    "category": "travel log",
+    "lat": 19.297479183058584,
+    "lng": -81.38369846310104
+  },
+  {
+    "id": 19,
+    "name": "Roatan",
+    "category": "travel log",
+    "lat": 16.32778104139355, 
+    "lng": -86.49618250208573
+  },
+  {
+    "id": 20,
+    "name": "Belize",
+    "category": "travel log",
+    "lat": 17.189877,
+    "lng": -88.497651
+  },
+  {
+    "id": 21,
+    "name": "Cozumel",
+    "category": "travel log",
+    "lat": 20.511112626916375, 
+    "lng": -86.95667092625604
+  },
+  {
+    "id": 22,
+    "name": "Grand Turk",
+    "category": "travel log",
+    "lat": 21.427968387157055, 
+    "lng": -71.14188244101014
+  },
+  {
+    "id": 23,
+    "name": "Puerto Rico",
+    "category": "travel log",
+    "lat": 18.46239875757019, 
+    "lng": -66.10961647210613
+  },
+  {
+    "id": 24,
+    "name": "St. Kitts",
+    "category": "travel log",
+    "lat": 17.292006898058876, 
+    "lng": -62.72262264996809
+  },
+  {
+    "id": 25,
+    "name": "Sint Maarten",
+    "category": "travel log",
+    "lat": 18.039658684922625, 
+    "lng": -63.119725072842485
+  },
+  {
+    "id": 26,
+    "name": "Curacao",
+    "category": "travel log",
+    "lat": 12.10497198095165, 
+    "lng": -68.9417204517829
+  },
+  {
+    "id": 27,
+    "name": "Bonaire",
+    "category": "travel log",
+    "lat": 12.148440659370925, 
+    "lng": -68.27502175585057
+  },
+  {
+    "id": 28,
+    "name": "Miami/Fort Lauderdale",
+    "category": "travel log",
+    "lat": 25.761680,
+    "lng": -80.191788
+  },
+  {
+    "id": 29,
+    "name": "Frankfort",
+    "category": "travel log",
+    "lat": 38.2168134903614, 
+    "lng": -84.87020733913404
+  },
+  {
+    "id": 30,
+    "name": "Canmore",
+    "category": "travel log",
+    "lat": 51.08438940786784, 
+    "lng": -115.34114987947785
   }
 ]
