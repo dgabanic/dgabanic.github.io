@@ -13,6 +13,87 @@
     "name": "Nervous Dog Coffee Bar",
     "category": "coffee",
     "lat": 41.13642226502347,
-    "lng": -81.63591450245397
+    "lng": -81.63591450245397,
+    "images": ["/images/coffee/nervousdog1.jpg"]
+  },
+  {
+    "id": 3,
+    "name": "Aruba",
+    "category": "travel",
+    "lat": 12.58064,
+    "lng": -70.04476,
+    "images": ["/images/destinations/aruba1.jpg"]
+  },
+  {
+    "id": 4,
+    "name": "Amsterdam",
+    "category": "travel",
+    "lat": 52.37732341199218,
+    "lng":  4.8954031416862485,
+    "images": ["/images/destinations/amsterdam1.jpg", "/images/destinations/amsterdam2.jpg", "/images/destinations/amsterdam3.jpg"]
+  },
+  {
+    "id": 5,
+    "name": "Maui",
+    "category": "travel",
+    "lat": 20.922812672013716,
+    "lng": -156.69447271861998,
+    "images": ["/images/destinations/hawaii1.jpg"]
+  },
+  {
+    "id": 6,
+    "name": "Banff",
+    "category": "travel",
+    "lat": 51.17839446603472,
+    "lng": -115.57070187490504,
+    "images": ["/images/destinations/banff1.jpg", "/images/destinations/banff2.jpg"]
+  },
+  {
+    "id": 7,
+    "name": "Zurich",
+    "category": "travel",
+    "lat": 47.37838395495321,
+    "lng": 8.540456084052044,
+    "images": ["/images/destinations/zurich1.jpg", "/images/destinations/zurich2.jpg"]
+  },
+  {
+    "id": 8,
+    "name": "Edinburgh",
+    "category": "travel",
+    "lat": 55.94859906375512,
+    "lng": -3.199364144470726,
+    "images": ["/images/destinations/edinburgh1.jpg", "/images/destinations/edinburgh2.jpg"]
+  },
+  {
+    "id": 9,
+    "name": "Dublin",
+    "category": "travel",
+    "lat": 53.34928501747373,
+    "lng": -6.257750500570806,
+    "images": ["/images/destinations/dublin1.jpg"]
+  },
+  {
+    "id": 10,
+    "name": "Munich",
+    "category": "travel",
+    "lat": 48.13512532043476,
+    "lng": 11.582099609375,
+    "images": ["/images/destinations/munich1.jpg"]
+  },
+  {
+    "id": 11,
+    "name": "Bern",
+    "category": "travel",
+    "lat": 46.94809221191406,
+    "lng": 7.447435569763184,
+    "images": ["/images/destinations/bern1.jpg"]
+  },
+  {
+    "id": 12,
+    "name": "Lucerne",
+    "category": "travel",
+    "lat": 47.05018023498535,
+    "lng": 8.309557113647461,
+    "images": ["/images/destinations/lucerne1.jpg"]
   }
 ]
