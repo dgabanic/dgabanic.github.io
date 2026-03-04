@@ -95,5 +95,21 @@
     "lat": 47.05018023498535,
     "lng": 8.309557113647461,
     "images": ["/images/destinations/lucerne1.jpg"]
+  },
+  {
+    "id": 13,
+    "name": "Cincinnati",
+    "category": "travel",
+    "lat": 39.10318724365234,
+    "lng": -84.51240844726562,
+    "images": ["/images/destinations/cincinnati1.jpg", "/images/destinations/cincinnati2.jpg"]
+  },
+  {
+    "id": 14,
+    "name": "Grand Rapids",
+    "category": "travel",
+    "lat": 42.96335998535156,
+    "lng": -85.66802215576172,
+    "images": ["/images/destinations/grandrapids1.jpg"]
   }
 ]
