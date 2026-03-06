@@ -223,5 +223,68 @@
     "category": "travel log",
     "lat": 51.08438940786784, 
     "lng": -115.34114987947785
+  },
+  {
+    "id": 31,
+    "name": "Calgary",
+    "category": "travel log",
+    "lat": 51.0447331, 
+    "lng": -114.0718831
+  },
+  {
+    "id": 32,
+    "name": "Peninsula Coffee House",
+    "category": "coffee",
+    "lat": 41.24157874540903, 
+    "lng": -81.55041277996663
+  },
+  {
+    "id": 33,
+    "name": "Coffee Emporium",
+    "category": "coffee",
+    "lat": 39.10844520172756, 
+    "lng": -84.51257505225648
+  },
+  {
+    "id": 34,
+    "name": "Madcap Coffee Company",
+    "category": "coffee",
+    "lat": 42.96583367918012, 
+    "lng": -85.67015123702762
+  },
+  {
+    "id": 35,
+    "name": "Preservation Coffee",
+    "category": "coffee",
+    "lat": 37.64116658169062, 
+    "lng": -120.99903460589661
+  },
+  {
+    "id": 36,
+    "name": "Knoops",
+    "category": "coffee",
+    "lat": 55.95261973586795, 
+    "lng": -3.203345841150284
+  },
+  {
+    "id": 37,
+    "name": "Steiner Bäckerei-Konditorei",
+    "category": "coffee",
+    "lat": 47.38762002561459,
+    "lng": 8.514725592315257
+  },
+  {
+    "id": 38,
+    "name": "Caffè il Momento",
+    "category": "coffee",
+    "lat": 52.374693804556536, 
+    "lng": 4.889043767705639
+  },
+  {
+    "id": 39,
+    "name": "Castle Mountain Coffee",
+    "category": "coffee",
+    "lat": 51.14469715404498, 
+    "lng": -115.57502889409022
   }
 ]
