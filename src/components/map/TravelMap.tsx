@@ -8,11 +8,13 @@ import destinations from '../../data/destinations.json';
 type Category = 'all' 
 | 'travel log' 
 | 'coffee'
+| 'beer'
 ;
 
 const CATEGORY_COLORS: Record<string, string> = {
-  'travel log': 'yellow',
-  coffee: 'brown',
+  'travel log': 'green',
+  'coffee': 'brown',
+  'beer': 'yellow',
 };
 
 function createIcon(category: string) {
@@ -59,6 +61,7 @@ export default function TravelMap({ onBack }: TravelMapProps) {
   const categories: Category[] = ['all'
     , 'travel log'
     , 'coffee'
+    , 'beer'
   ];
 
   return (

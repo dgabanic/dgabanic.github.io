@@ -286,5 +286,236 @@
     "category": "coffee",
     "lat": 51.14469715404498, 
     "lng": -115.57502889409022
+  },
+  {
+    "id": 40,
+    "name": "Broadview Brewing Company",
+    "category": "beer",
+    "lat": 41.29099093186958, 
+    "lng": -81.68360390632385
+  },
+  {
+    "id": 41,
+    "name": "Great Lakes Brewing Company",
+    "category": "beer",
+    "lat": 41.48448460124126, 
+    "lng": -81.70421376812772
+  },
+  {
+    "id": 42,
+    "name": "Fat Head's Brewery",
+    "category": "beer",
+    "lat": 41.37919187573144, 
+    "lng": -81.8208219920964
+  },
+  {
+    "id": 43,
+    "name": "Schnitz Ale Brewery",
+    "category": "beer",
+    "lat": 41.40633257528269, 
+    "lng": -81.74193668071679
+  },
+  {
+    "id": 44,
+    "name": "Lock 15 Brewing Company",
+    "category": "beer",
+    "lat": 41.0933215592062, 
+    "lng": -81.51723743738988
+  },
+  {
+    "id": 45,
+    "name": "Hoppin' Frog Brewery",
+    "category": "beer",
+    "lat": 41.02489815311889, 
+    "lng": -81.46765932097621
+  },
+  {
+    "id": 46,
+    "name": "Streetside Brewery",
+    "category": "beer",
+    "lat": 39.113082591710054, 
+    "lng": -84.43348852983075
+  },
+  {
+    "id": 47,
+    "name": "Rhinegeist Brewery",
+    "category": "beer",
+    "lat": 39.117981410453844, 
+    "lng": -84.52007224328699
+  },
+  {
+    "id": 48,
+    "name": "Northern Row Brewery, Distillery & Taproom",
+    "category": "beer",
+    "lat": 39.11825210347552, 
+    "lng": -84.51912921924401
+  },
+  {
+    "id": 49,
+    "name": "Wiseguy Lounge",
+    "category": "beer",
+    "lat": 39.10975981413206, 
+    "lng": -84.51202876138443
+  },
+  {
+    "id": 50,
+    "name": "Murphy's Pub",
+    "category": "beer",
+    "lat": 39.12469755278441, 
+    "lng": -84.520114118392
+  },
+  {
+    "id": 51,
+    "name": "Founders Brewing Company",
+    "category": "beer",
+    "lat": 42.95903315057128, 
+    "lng": -85.67391184778691
+  },
+  {
+    "id": 52,
+    "name": "New Holland Brewing",
+    "category": "beer",
+    "lat": 42.971093912242395, 
+    "lng": -85.6797913376731
+  },
+  {
+    "id": 53,
+    "name": "Half Moon Bay Brewing Company",
+    "category": "beer",
+    "lat": 37.50424663673895, 
+    "lng": -122.48557956118731
+  },
+  {
+    "id": 54,
+    "name": "Island Vintage Coffee",
+    "category": "coffee",
+    "lat": 20.921937656624355, 
+    "lng": -156.69460633453033
+  },
+  {
+    "id": 55,
+    "name": "Maui Brewing Company",
+    "category": "beer",
+    "lat": 20.92502430002914, 
+    "lng": -156.69494956395022
+  },
+  {
+    "id": 56,
+    "name": "Irish Whiskey Museum",
+    "category": "beer",
+    "lat": 53.344228819842264, 
+    "lng": -6.259538811842253
+  },
+  {
+    "id": 57,
+    "name": "The Ha'penny Bridge Inn",
+    "category": "beer",
+    "lat": 53.345901424399074, 
+    "lng": -6.263286811315813
+  },
+  {
+    "id": 58,
+    "name": "Fierce Beer",
+    "category": "beer",
+    "lat": 55.95152570529836, 
+    "lng": -3.204662446434585
+  },
+  {
+    "id": 59,
+    "name": "The Ensign Ewart",
+    "category": "beer",
+    "lat": 55.94925613923416, 
+    "lng": -3.194386426940581
+  },
+  {
+    "id": 60,
+    "name": "Uilebheist Distillery & Brewery",
+    "category": "beer",
+    "lat": 57.473825729593464, 
+    "lng": -4.226209757316445
+  },
+  {
+    "id": 61,
+    "name": "Bierwerk Züri",
+    "category": "beer",
+    "lat": 47.37956924938654, 
+    "lng": 8.531784329858965
+  },
+  {
+    "id": 62,
+    "name": "Cafe Gollem Raamsteeg",
+    "category": "beer",
+    "lat": 52.3704092570914, 
+    "lng": 4.888640176413556
+  },
+  {
+    "id": 63,
+    "name": "Proeflokaal 't Kelkje",
+    "category": "beer",
+    "lat": 52.37142415315268, 
+    "lng": 4.896571345459068
+  },
+  {
+    "id": 64,
+    "name": "Brouwerij 't IJ",
+    "category": "beer",
+    "lat": 52.36672355351393, 
+    "lng": 4.9271012172100646
+  },
+  {
+    "id": 65,
+    "name": "Café Karpershoek",
+    "category": "beer",
+    "lat": 52.3781578251876, 
+    "lng": 4.896765559246518
+  },
+  {
+    "id": 66,
+    "name": "Bottlescrew Bill's",
+    "category": "beer",
+    "lat": 51.04397873375672, 
+    "lng": -114.06534600051263
+  },
+  {
+    "id": 67,
+    "name": "Four Dogs Brewery",
+    "category": "beer",
+    "lat": 51.041919103733555, 
+    "lng": -114.06423881944112
+  },
+  {
+    "id": 68,
+    "name": "Banded Peak Brewing",
+    "category": "beer",
+    "lat": 51.024525305279234, 
+    "lng": -114.03178993898045
+  },
+  {
+    "id": 69,
+    "name": "The Grizzly Paw",
+    "category": "beer",
+    "lat": 51.088631051316625, 
+    "lng": -115.34446215243618
+  },
+  {
+    "id": 70,
+    "name": "Canmore Brewing Company",
+    "category": "beer",
+    "lat": 51.09531294863687, 
+    "lng": -115.35544394157438
+  },
+  {
+    "id": 71,
+    "name": "Banff Ave Brewing Co.",
+    "category": "beer",
+    "lat": 51.17490440523334, 
+    "lng": -115.57063847776932
+  },
+  {
+    "id": 72,
+    "name": "The Canadian Brewhouse",
+    "category": "beer",
+    "lat": 51.17871453063447, 
+    "lng": -115.57114696603239
   }
 ]
