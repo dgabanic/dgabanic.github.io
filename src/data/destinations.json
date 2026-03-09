@@ -517,5 +517,19 @@
     "category": "beer",
     "lat": 51.17871453063447, 
     "lng": -115.57114696603239
+  },
+  {
+    "id": 73,
+    "name": "Jasper National Park",
+    "category": "travel log",
+    "lat": 52.222177371499235, 
+    "lng": -117.22525427330235
+  },
+  {
+    "id": 74,
+    "name": "Galway",
+    "category": "travel log",
+    "lat": 53.272705469478566, 
+    "lng": -9.053237188297528
   }
 ]
