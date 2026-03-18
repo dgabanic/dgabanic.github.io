@@ -1,10 +1,14 @@
-import styles from './PersonalSection.module.css';
+import styles from "./PersonalSection.module.css";
 
 // each entry in this list will become a grid item; 9 slots reserved
-const EXTERNAL_ITEMS: Array<{ href: string; label: string; icon?: JSX.Element }> = [
+const EXTERNAL_ITEMS: Array<{
+  href: string;
+  label: string;
+  icon?: JSX.Element;
+}> = [
   {
-    href: 'https://www.chess.com/member/dgabanic',
-    label: 'Play me in Chess!',
+    href: "https://www.chess.com/member/dgabanic",
+    label: "Play me in Chess!",
     icon: (
       <img
         src="/images/chesslogo.png"
@@ -20,9 +24,9 @@ interface PersonalSectionProps {
 }
 
 const INTERNAL_ITEMS: Array<{ page: string; label: string }> = [
-  { page: 'books', label: '📚 Reading List' },
-  { page: 'map', label: '🌍 Travel Map' },
-  { page: 'schedules', label: '🏟️ Sports Schedules' },
+  { page: "books", label: "📚 Reading List" },
+  { page: "map", label: "🌍 Travel Map" },
+  { page: "schedules", label: "🏟️ Sports Schedules" },
   // { page: 'beers', label: '🍺 Favorite Beers' },
   // { page: 'jerseys', label: '⚽ Favorite Jerseys' },
 ];
@@ -57,8 +61,17 @@ export default function PersonalSection({ onNavigate }: PersonalSectionProps) {
           </button>
         ))}
         {/* fill out remaining cells with invisible placeholders */}
-        {Array.from({ length: Math.max(0, 9 - EXTERNAL_ITEMS.length - INTERNAL_ITEMS.length) }).map((_, i) => (
-          <div key={`empty-${i}`} className={styles.emptyCell} aria-hidden="true" />
+        {Array.from({
+          length: Math.max(
+            0,
+            9 - EXTERNAL_ITEMS.length - INTERNAL_ITEMS.length,
+          ),
+        }).map((_, i) => (
+          <div
+            key={`empty-${i}`}
+            className={styles.emptyCell}
+            aria-hidden="true"
+          />
         ))}
       </div>
     </section>
