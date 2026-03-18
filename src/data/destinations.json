@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Inverness",
-    "category": "travel",
+    "category": "travel log",
     "lat": 57.47402498217785,
     "lng": -4.226396251494359,
     "description": "The Scottish Highlands",
@@ -13,6 +13,523 @@
     "name": "Nervous Dog Coffee Bar",
     "category": "coffee",
     "lat": 41.13642226502347,
-    "lng": -81.63591450245397
+    "lng": -81.63591450245397,
+    "images": ["/images/coffee/nervousdog1.jpg"]
+  },
+  {
+    "id": 3,
+    "name": "Aruba",
+    "category": "travel log",
+    "lat": 12.58064,
+    "lng": -70.04476,
+    "images": ["/images/destinations/aruba1.jpg"]
+  },
+  {
+    "id": 4,
+    "name": "Amsterdam",
+    "category": "travel log",
+    "lat": 52.37732341199218,
+    "lng":  4.8954031416862485,
+    "images": ["/images/destinations/amsterdam1.jpg", "/images/destinations/amsterdam2.jpg", "/images/destinations/amsterdam3.jpg"]
+  },
+  {
+    "id": 5,
+    "name": "Maui",
+    "category": "travel log",
+    "lat": 20.922812672013716,
+    "lng": -156.69447271861998,
+    "images": ["/images/destinations/hawaii1.jpg"]
+  },
+  {
+    "id": 6,
+    "name": "Banff",
+    "category": "travel log",
+    "lat": 51.17839446603472,
+    "lng": -115.57070187490504,
+    "images": ["/images/destinations/banff1.jpg", "/images/destinations/banff2.jpg"]
+  },
+  {
+    "id": 7,
+    "name": "Zurich",
+    "category": "travel log",
+    "lat": 47.37838395495321,
+    "lng": 8.540456084052044,
+    "images": ["/images/destinations/zurich1.jpg", "/images/destinations/zurich2.jpg"]
+  },
+  {
+    "id": 8,
+    "name": "Edinburgh",
+    "category": "travel log",
+    "lat": 55.94859906375512,
+    "lng": -3.199364144470726,
+    "images": ["/images/destinations/edinburgh1.jpg", "/images/destinations/edinburgh2.jpg"]
+  },
+  {
+    "id": 9,
+    "name": "Dublin",
+    "category": "travel log",
+    "lat": 53.34928501747373,
+    "lng": -6.257750500570806,
+    "images": ["/images/destinations/dublin1.jpg"]
+  },
+  {
+    "id": 10,
+    "name": "Munich",
+    "category": "travel log",
+    "lat": 48.13512532043476,
+    "lng": 11.582099609375,
+    "images": ["/images/destinations/munich1.jpg"]
+  },
+  {
+    "id": 11,
+    "name": "Bern",
+    "category": "travel log",
+    "lat": 46.94809221191406,
+    "lng": 7.447435569763184,
+    "images": ["/images/destinations/bern1.jpg"]
+  },
+  {
+    "id": 12,
+    "name": "Lucerne",
+    "category": "travel log",
+    "lat": 47.05018023498535,
+    "lng": 8.309557113647461,
+    "images": ["/images/destinations/lucerne1.jpg"]
+  },
+  {
+    "id": 13,
+    "name": "Cincinnati",
+    "category": "travel log",
+    "lat": 39.10318724365234,
+    "lng": -84.51240844726562,
+    "images": ["/images/destinations/cincinnati1.jpg", "/images/destinations/cincinnati2.jpg"]
+  },
+  {
+    "id": 14,
+    "name": "Grand Rapids",
+    "category": "travel log",
+    "lat": 42.96335998535156,
+    "lng": -85.66802215576172,
+    "images": ["/images/destinations/grandrapids1.jpg"]
+  },
+  {
+    "id": 15,
+    "name": "San Francisco",
+    "category": "travel log",
+    "lat": 37.7749295,
+    "lng": -122.4194155
+  },
+  {
+    "id": 16,
+    "name": "Modesto",
+    "category": "travel log",
+    "lat": 37.629207367310876,
+    "lng": -120.97517173814056
+  },
+  {
+    "id": 17,
+    "name": "Las Vegas",
+    "category": "travel log",
+    "lat": 36.12190778162865,
+    "lng": -115.16934277607982
+  },
+  {
+    "id": 18,
+    "name": "Grand Cayman",
+    "category": "travel log",
+    "lat": 19.297479183058584,
+    "lng": -81.38369846310104
+  },
+  {
+    "id": 19,
+    "name": "Roatan",
+    "category": "travel log",
+    "lat": 16.32778104139355, 
+    "lng": -86.49618250208573
+  },
+  {
+    "id": 20,
+    "name": "Belize",
+    "category": "travel log",
+    "lat": 17.189877,
+    "lng": -88.497651
+  },
+  {
+    "id": 21,
+    "name": "Cozumel",
+    "category": "travel log",
+    "lat": 20.511112626916375, 
+    "lng": -86.95667092625604
+  },
+  {
+    "id": 22,
+    "name": "Grand Turk",
+    "category": "travel log",
+    "lat": 21.427968387157055, 
+    "lng": -71.14188244101014
+  },
+  {
+    "id": 23,
+    "name": "Puerto Rico",
+    "category": "travel log",
+    "lat": 18.46239875757019, 
+    "lng": -66.10961647210613
+  },
+  {
+    "id": 24,
+    "name": "St. Kitts",
+    "category": "travel log",
+    "lat": 17.292006898058876, 
+    "lng": -62.72262264996809
+  },
+  {
+    "id": 25,
+    "name": "Sint Maarten",
+    "category": "travel log",
+    "lat": 18.039658684922625, 
+    "lng": -63.119725072842485
+  },
+  {
+    "id": 26,
+    "name": "Curacao",
+    "category": "travel log",
+    "lat": 12.10497198095165, 
+    "lng": -68.9417204517829
+  },
+  {
+    "id": 27,
+    "name": "Bonaire",
+    "category": "travel log",
+    "lat": 12.148440659370925, 
+    "lng": -68.27502175585057
+  },
+  {
+    "id": 28,
+    "name": "Miami/Fort Lauderdale",
+    "category": "travel log",
+    "lat": 25.761680,
+    "lng": -80.191788
+  },
+  {
+    "id": 29,
+    "name": "Frankfort",
+    "category": "travel log",
+    "lat": 38.2168134903614, 
+    "lng": -84.87020733913404
+  },
+  {
+    "id": 30,
+    "name": "Canmore",
+    "category": "travel log",
+    "lat": 51.08438940786784, 
+    "lng": -115.34114987947785
+  },
+  {
+    "id": 31,
+    "name": "Calgary",
+    "category": "travel log",
+    "lat": 51.0447331, 
+    "lng": -114.0718831
+  },
+  {
+    "id": 32,
+    "name": "Peninsula Coffee House",
+    "category": "coffee",
+    "lat": 41.24157874540903, 
+    "lng": -81.55041277996663
+  },
+  {
+    "id": 33,
+    "name": "Coffee Emporium",
+    "category": "coffee",
+    "lat": 39.10844520172756, 
+    "lng": -84.51257505225648
+  },
+  {
+    "id": 34,
+    "name": "Madcap Coffee Company",
+    "category": "coffee",
+    "lat": 42.96583367918012, 
+    "lng": -85.67015123702762
+  },
+  {
+    "id": 35,
+    "name": "Preservation Coffee",
+    "category": "coffee",
+    "lat": 37.64116658169062, 
+    "lng": -120.99903460589661
+  },
+  {
+    "id": 36,
+    "name": "Knoops",
+    "category": "coffee",
+    "lat": 55.95261973586795, 
+    "lng": -3.203345841150284
+  },
+  {
+    "id": 37,
+    "name": "Steiner Bäckerei-Konditorei",
+    "category": "coffee",
+    "lat": 47.38762002561459,
+    "lng": 8.514725592315257
+  },
+  {
+    "id": 38,
+    "name": "Caffè il Momento",
+    "category": "coffee",
+    "lat": 52.374693804556536, 
+    "lng": 4.889043767705639
+  },
+  {
+    "id": 39,
+    "name": "Castle Mountain Coffee",
+    "category": "coffee",
+    "lat": 51.14469715404498, 
+    "lng": -115.57502889409022
+  },
+  {
+    "id": 40,
+    "name": "Broadview Brewing Company",
+    "category": "beer",
+    "lat": 41.29099093186958, 
+    "lng": -81.68360390632385
+  },
+  {
+    "id": 41,
+    "name": "Great Lakes Brewing Company",
+    "category": "beer",
+    "lat": 41.48448460124126, 
+    "lng": -81.70421376812772
+  },
+  {
+    "id": 42,
+    "name": "Fat Head's Brewery",
+    "category": "beer",
+    "lat": 41.37919187573144, 
+    "lng": -81.8208219920964
+  },
+  {
+    "id": 43,
+    "name": "Schnitz Ale Brewery",
+    "category": "beer",
+    "lat": 41.40633257528269, 
+    "lng": -81.74193668071679
+  },
+  {
+    "id": 44,
+    "name": "Lock 15 Brewing Company",
+    "category": "beer",
+    "lat": 41.0933215592062, 
+    "lng": -81.51723743738988
+  },
+  {
+    "id": 45,
+    "name": "Hoppin' Frog Brewery",
+    "category": "beer",
+    "lat": 41.02489815311889, 
+    "lng": -81.46765932097621
+  },
+  {
+    "id": 46,
+    "name": "Streetside Brewery",
+    "category": "beer",
+    "lat": 39.113082591710054, 
+    "lng": -84.43348852983075
+  },
+  {
+    "id": 47,
+    "name": "Rhinegeist Brewery",
+    "category": "beer",
+    "lat": 39.117981410453844, 
+    "lng": -84.52007224328699
+  },
+  {
+    "id": 48,
+    "name": "Northern Row Brewery, Distillery & Taproom",
+    "category": "beer",
+    "lat": 39.11825210347552, 
+    "lng": -84.51912921924401
+  },
+  {
+    "id": 49,
+    "name": "Wiseguy Lounge",
+    "category": "beer",
+    "lat": 39.10975981413206, 
+    "lng": -84.51202876138443
+  },
+  {
+    "id": 50,
+    "name": "Murphy's Pub",
+    "category": "beer",
+    "lat": 39.12469755278441, 
+    "lng": -84.520114118392
+  },
+  {
+    "id": 51,
+    "name": "Founders Brewing Company",
+    "category": "beer",
+    "lat": 42.95903315057128, 
+    "lng": -85.67391184778691
+  },
+  {
+    "id": 52,
+    "name": "New Holland Brewing",
+    "category": "beer",
+    "lat": 42.971093912242395, 
+    "lng": -85.6797913376731
+  },
+  {
+    "id": 53,
+    "name": "Half Moon Bay Brewing Company",
+    "category": "beer",
+    "lat": 37.50424663673895, 
+    "lng": -122.48557956118731
+  },
+  {
+    "id": 54,
+    "name": "Island Vintage Coffee",
+    "category": "coffee",
+    "lat": 20.921937656624355, 
+    "lng": -156.69460633453033
+  },
+  {
+    "id": 55,
+    "name": "Maui Brewing Company",
+    "category": "beer",
+    "lat": 20.92502430002914, 
+    "lng": -156.69494956395022
+  },
+  {
+    "id": 56,
+    "name": "Irish Whiskey Museum",
+    "category": "beer",
+    "lat": 53.344228819842264, 
+    "lng": -6.259538811842253
+  },
+  {
+    "id": 57,
+    "name": "The Ha'penny Bridge Inn",
+    "category": "beer",
+    "lat": 53.345901424399074, 
+    "lng": -6.263286811315813
+  },
+  {
+    "id": 58,
+    "name": "Fierce Beer",
+    "category": "beer",
+    "lat": 55.95152570529836, 
+    "lng": -3.204662446434585
+  },
+  {
+    "id": 59,
+    "name": "The Ensign Ewart",
+    "category": "beer",
+    "lat": 55.94925613923416, 
+    "lng": -3.194386426940581
+  },
+  {
+    "id": 60,
+    "name": "Uilebheist Distillery & Brewery",
+    "category": "beer",
+    "lat": 57.473825729593464, 
+    "lng": -4.226209757316445
+  },
+  {
+    "id": 61,
+    "name": "Bierwerk Züri",
+    "category": "beer",
+    "lat": 47.37956924938654, 
+    "lng": 8.531784329858965
+  },
+  {
+    "id": 62,
+    "name": "Cafe Gollem Raamsteeg",
+    "category": "beer",
+    "lat": 52.3704092570914, 
+    "lng": 4.888640176413556
+  },
+  {
+    "id": 63,
+    "name": "Proeflokaal 't Kelkje",
+    "category": "beer",
+    "lat": 52.37142415315268, 
+    "lng": 4.896571345459068
+  },
+  {
+    "id": 64,
+    "name": "Brouwerij 't IJ",
+    "category": "beer",
+    "lat": 52.36672355351393, 
+    "lng": 4.9271012172100646
+  },
+  {
+    "id": 65,
+    "name": "Café Karpershoek",
+    "category": "beer",
+    "lat": 52.3781578251876, 
+    "lng": 4.896765559246518
+  },
+  {
+    "id": 66,
+    "name": "Bottlescrew Bill's",
+    "category": "beer",
+    "lat": 51.04397873375672, 
+    "lng": -114.06534600051263
+  },
+  {
+    "id": 67,
+    "name": "Four Dogs Brewery",
+    "category": "beer",
+    "lat": 51.041919103733555, 
+    "lng": -114.06423881944112
+  },
+  {
+    "id": 68,
+    "name": "Banded Peak Brewing",
+    "category": "beer",
+    "lat": 51.024525305279234, 
+    "lng": -114.03178993898045
+  },
+  {
+    "id": 69,
+    "name": "The Grizzly Paw",
+    "category": "beer",
+    "lat": 51.088631051316625, 
+    "lng": -115.34446215243618
+  },
+  {
+    "id": 70,
+    "name": "Canmore Brewing Company",
+    "category": "beer",
+    "lat": 51.09531294863687, 
+    "lng": -115.35544394157438
+  },
+  {
+    "id": 71,
+    "name": "Banff Ave Brewing Co.",
+    "category": "beer",
+    "lat": 51.17490440523334, 
+    "lng": -115.57063847776932
+  },
+  {
+    "id": 72,
+    "name": "The Canadian Brewhouse",
+    "category": "beer",
+    "lat": 51.17871453063447, 
+    "lng": -115.57114696603239
+  },
+  {
+    "id": 73,
+    "name": "Jasper National Park",
+    "category": "travel log",
+    "lat": 52.222177371499235, 
+    "lng": -117.22525427330235
+  },
+  {
+    "id": 74,
+    "name": "Galway",
+    "category": "travel log",
+    "lat": 53.272705469478566, 
+    "lng": -9.053237188297528
   }
 ]

@@ -6,13 +6,15 @@ import styles from './TravelMap.module.css';
 import destinations from '../../data/destinations.json';
 
 type Category = 'all' 
-| 'travel' 
+| 'travel log' 
 | 'coffee'
+| 'beer'
 ;
 
 const CATEGORY_COLORS: Record<string, string> = {
-  travel: 'yellow',
-  coffee: 'brown',
+  'travel log': 'green',
+  'coffee': 'brown',
+  'beer': 'yellow',
 };
 
 function createIcon(category: string) {
@@ -57,8 +59,9 @@ export default function TravelMap({ onBack }: TravelMapProps) {
     : destinations.filter((d) => d.category === filter);
 
   const categories: Category[] = ['all'
-    , 'travel'
+    , 'travel log'
     , 'coffee'
+    , 'beer'
   ];
 
   return (
