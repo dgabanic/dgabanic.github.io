@@ -24,15 +24,10 @@ interface PersonalSectionProps {
 }
 
 const INTERNAL_ITEMS: Array<{ page: string; label: string }> = [
-<<<<<<< HEAD
-  { page: "books", label: "📚 Reading List" },
-  { page: "map", label: "🌍 Travel Map" },
-  { page: "schedules", label: "🏟️ Sports Schedules" },
-=======
+
   { page: 'books', label: '📚 Reading List' },
   { page: 'map', label: '🌍 Favorite Places' },
   { page: 'schedules', label: '🏟️ Sports Schedules' },
->>>>>>> 39b9b516030cd1159d0e7b6ec41db50320b51f63
   // { page: 'beers', label: '🍺 Favorite Beers' },
   // { page: 'jerseys', label: '⚽ Favorite Jerseys' },
 ];
