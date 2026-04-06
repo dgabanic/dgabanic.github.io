@@ -46,17 +46,18 @@ const BOOKS: Book[] = [
   { date: 'October 2023', title: 'Moneyball', author: 'Michael Lewis' },
   { date: 'November 2023', title: 'Bullshit Jobs', author: 'David Graeber' },
   { date: 'January 2024', title: 'A History of the Cuban Revolution', author: 'Aviva Chomsky' },
-  { date: 'May 2024', title: 'The World of Ice and Fire', author: 'George R.R. Martin', note: "didn't finish" },
+  { date: 'May 2024', title: 'The World of Ice and Fire', author: 'George R.R. Martin', note: "dnf" },
   { date: 'November 2024', title: 'American Rule', author: 'Jared Yates Sexton' },
   { date: 'January 2025', title: 'That All Shall Be Saved', author: 'David Bentley Hart' },
-  { date: 'April 2025', title: 'Walden', author: 'Henry David Thoreau', note: "didn't finish" },
+  { date: 'April 2025', title: 'Walden', author: 'Henry David Thoreau', note: "dnf" },
   { date: 'July 2025', title: 'The Way of Kings', author: 'Brandon Sanderson' },
   { date: 'October 2025', title: 'The Deficit Myth', author: 'Stephanie Kelton' },
   { date: 'November 2025', title: 'Words of Radiance', author: 'Brandon Sanderson' },
   { date: 'January 2026', title: 'Project Hail Mary', author: 'Andy Weir' },
   { date: 'February 2026', title: 'Edgedancer', author: 'Brandon Sanderson' },
   { date: 'February 2026', title: 'Oathbringer', author: 'Brandon Sanderson' },
-  { date: 'March 2026',  title: 'Walden', author: 'Henry David Thoreau' }
+  { date: 'March 2026',  title: 'Walden', author: 'Henry David Thoreau' },
+  { date: 'April 2026', title: 'Mistborn', author: 'Brandon Sanderson' }
 ];
 
 const currentlyReading = BOOKS[BOOKS.length - 1];
