@@ -13,7 +13,7 @@ const BOOKS: Book[] = [
   { date: 'March 2019', title: 'The Defining Decade', author: 'Meg Jay' },
   { date: 'March 2019', title: 'The Book of Basketball', author: 'Bill Simmons' },
   { date: 'April 2019', title: 'A Game of Thrones', author: 'George R.R. Martin' },
-  { date: 'July 2019', title: 'Access All Areas', author: 'Scott Ian' },
+  { date: 'July 2019', title: 'Access All Areas', author: 'Ninjalicious' },
   { date: 'August 2019', title: 'A Clash of Kings', author: 'George R.R. Martin' },
   { date: 'January 2020', title: 'Conquest of Bread', author: 'Peter Kropotkin' },
   { date: 'February 2020', title: 'A Storm of Swords', author: 'George R.R. Martin' },
@@ -57,7 +57,8 @@ const BOOKS: Book[] = [
   { date: 'February 2026', title: 'Edgedancer', author: 'Brandon Sanderson' },
   { date: 'February 2026', title: 'Oathbringer', author: 'Brandon Sanderson' },
   { date: 'March 2026',  title: 'Walden', author: 'Henry David Thoreau' },
-  { date: 'April 2026', title: 'Mistborn', author: 'Brandon Sanderson' }
+  { date: 'April 2026', title: 'Mistborn', author: 'Brandon Sanderson' },
+  { date: 'April 2026', title: 'The End is Always Near', author: 'Dan Carlin' },
 ];
 
 const currentlyReading = BOOKS[BOOKS.length - 1];
