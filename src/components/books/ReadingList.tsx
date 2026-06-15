@@ -63,6 +63,7 @@ const BOOKS: Book[] = [
   { date: 'April 2026', title: 'Rhythm of War', author: 'Brandon Sanderson' },
   { date: 'May 2026', title: 'The Doors of the Sea', author: 'David Bentley Hart' },
   { date: 'June 2026', title: 'Dark Matter', author: 'Blake Crouch' },
+  { date: 'June 2026', title: 'Brilliant Orange', author: 'David Winner' },
 ];
 
 const currentlyReading = BOOKS[BOOKS.length - 1];
