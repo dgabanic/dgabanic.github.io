@@ -3,19 +3,23 @@ name: Deploy site
 on:
   push:
     branches: [ master ]
+permissions:
+  contents: write
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
       - run: npm ci
       - run: npm run build
       - uses: peaceiris/actions-gh-pages@v3
         with:
           publish_dir: ./dist
           publish_branch: gh-pages
-          # provide a token so the action can push to the repository
           github_token: ${{ secrets.GITHUB_TOKEN }}
