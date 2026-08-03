@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import styles from "./App.module.css";
 import Navbar from "./components/navbar/Navbar";
 import HeroSection from "./components/hero/HeroSection";
@@ -9,15 +9,49 @@ import TravelMap from "./components/map/TravelMap";
 import FavoritesList from "./components/favorites/FavoritesList";
 import Schedules from "./components/schedules/Schedules";
 import AdminPage from "./components/admin/AdminPage";
+import ShoppingList from "./components/shopping/ShoppingList";
 import favoriteBeers from "./data/favoriteBeers";
 import favoriteJerseys from "./data/favoriteJerseys";
 
 type Theme = "light" | "dark";
-type Page = "home" | "books" | "map" | "beers" | "jerseys" | "schedules";
+type Page =
+  | "home"
+  | "books"
+  | "map"
+  | "beers"
+  | "jerseys"
+  | "schedules"
+  | "shopping"
+  | "admin";
+
+const PATH_TO_PAGE: Record<string, Page> = {
+  "/": "home",
+  "/books": "books",
+  "/map": "map",
+  "/beers": "beers",
+  "/jerseys": "jerseys",
+  "/schedules": "schedules",
+  "/shopping": "shopping",
+  "/admin": "admin",
+};
+
+const PAGE_TO_PATH: Record<Page, string> = {
+  home: "/",
+  books: "/books",
+  map: "/map",
+  beers: "/beers",
+  jerseys: "/jerseys",
+  schedules: "/schedules",
+  shopping: "/shopping",
+  admin: "/admin",
+};
+
+function getPageFromPath(): Page {
+  return PATH_TO_PAGE[window.location.pathname] || "home";
+}
 
 function App() {
-  const isAdmin = window.location.pathname === "/admin";
-  const [page, setPage] = useState<Page>("home");
+  const [page, setPage] = useState<Page>(getPageFromPath);
   const [theme, setTheme] = useState<Theme>(() => {
     if (typeof window !== "undefined" && window.localStorage) {
       const stored = window.localStorage.getItem("theme");
@@ -34,21 +68,29 @@ function App() {
     window.localStorage.setItem("theme", theme);
   }, [theme]);
 
+  // Listen for browser back/forward navigation
+  useEffect(() => {
+    const handlePopState = () => {
+      setPage(getPageFromPath());
+    };
+    window.addEventListener("popstate", handlePopState);
+    return () => window.removeEventListener("popstate", handlePopState);
+  }, []);
+
   const toggleTheme = () => setTheme(theme === "dark" ? "light" : "dark");
 
-  const navigateTo = (p: string) => {
-    setPage(p as Page);
+  const navigateTo = useCallback((p: string) => {
+    const target = p as Page;
+    const path = PAGE_TO_PATH[target] || "/";
+    window.history.pushState(null, "", path);
+    setPage(target);
     window.scrollTo({ top: 0, behavior: "smooth" });
-  };
+  }, []);
 
-  if (isAdmin) {
+  if (page === "admin") {
     return (
       <main className={styles.mainPanel}>
-        <AdminPage
-          onBack={() => {
-            window.location.href = "/";
-          }}
-        />
+        <AdminPage onBack={() => navigateTo("home")} />
       </main>
     );
   }
@@ -103,6 +145,8 @@ function App() {
           />
         ) : page === "schedules" ? (
           <Schedules onBack={() => navigateTo("home")} />
+        ) : page === "shopping" ? (
+          <ShoppingList onBack={() => navigateTo("home")} />
         ) : null}
       </main>
     </>
