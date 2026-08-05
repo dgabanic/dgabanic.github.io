@@ -37,6 +37,15 @@
   margin-bottom: 1.5rem;
 }
 
+.syncMessage {
+  text-align: center;
+  color: #d9534f;
+  opacity: 0.85;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
 .clearCheckedButton {
   display: block;
   margin: 0 auto 1.5rem;
@@ -164,6 +173,12 @@
   margin-bottom: 0.5rem;
 }
 
+.subsectionHeaderActions {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
 .subsectionName {
   font-size: 1rem;
   font-weight: 600;
@@ -188,6 +203,13 @@
 
 .productItem:last-child {
   border-bottom: none;
+}
+
+.productControls {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin-left: 0.75rem;
 }
 
 .productLabel {
@@ -231,6 +253,26 @@
 
 .removeButtonSmall:hover {
   opacity: 1;
+}
+
+.reorderButtonSmall {
+  background: none;
+  border: 1px solid rgba(0, 119, 181, 0.3);
+  color: #0077b5;
+  cursor: pointer;
+  font-size: 0.85rem;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.2rem;
+  transition: opacity 0.2s, background-color 0.2s;
+}
+
+.reorderButtonSmall:hover:not(:disabled) {
+  background-color: rgba(0, 119, 181, 0.1);
+}
+
+.reorderButtonSmall:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
 }
 
 /* Inline add product form */
