@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import styles from "./ShoppingList.module.css";
-import type { Product, Subsection, Store } from "../../api/shoppingListApi";
+import type { Store } from "../../api/shoppingListApi";
 import {
   fetchStores,
   getLocalStores,
