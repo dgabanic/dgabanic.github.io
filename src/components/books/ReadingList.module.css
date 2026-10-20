@@ -114,6 +114,119 @@
   font-size: 0.9rem;
 }
 
+/* Switch toggle */
+.switchRow {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Visually hide the native checkbox but keep it accessible */
+.switchInput {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.switchTrack {
+  position: relative;
+  display: inline-block;
+  width: 2.6rem;
+  height: 1.4rem;
+  border-radius: 1rem;
+  background-color: rgba(128, 128, 128, 0.4);
+  transition: background-color 0.2s;
+  flex-shrink: 0;
+}
+
+.switchThumb {
+  position: absolute;
+  top: 0.15rem;
+  left: 0.15rem;
+  width: 1.1rem;
+  height: 1.1rem;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: transform 0.2s;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.switchInput:checked + .switchTrack {
+  background-color: #0077b5;
+}
+
+.switchInput:checked + .switchTrack .switchThumb {
+  transform: translateX(1.2rem);
+}
+
+.switchInput:focus-visible + .switchTrack {
+  outline: 2px solid #0077b5;
+  outline-offset: 2px;
+}
+
+.switchLabel {
+  font-size: 0.95rem;
+}
+
+/* Less prominent latest-audiobook display */
+.currentAudiobook {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  margin-bottom: 2.5rem;
+  border: 1px dashed rgba(0, 119, 181, 0.4);
+  border-radius: 0.5rem;
+  background-color: rgba(0, 119, 181, 0.05);
+}
+
+.audiobookLabel {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 0.6;
+  flex-shrink: 0;
+}
+
+.audiobookInfo {
+  flex: 1;
+  font-size: 0.95rem;
+}
+
+.audiobookTitle {
+  font-weight: 600;
+}
+
+.audiobookAuthor {
+  opacity: 0.7;
+}
+
+.audiobookDate {
+  font-size: 0.8rem;
+  opacity: 0.6;
+  flex-shrink: 0;
+}
+
+/* Audiobook tag in history list */
+.audiobookTag {
+  font-size: 0.8rem;
+  color: #0077b5;
+  opacity: 0.8;
+}
+
 @media (max-width: 640px) {
   .bookItem {
     flex-direction: column;

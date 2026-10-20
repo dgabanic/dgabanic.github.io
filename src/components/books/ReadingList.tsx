@@ -1,10 +1,12 @@
-import styles from './ReadingList.module.css';
+import { useState } from "react";
+import styles from "./ReadingList.module.css";
 
 interface Book {
   date: string;
   title: string;
   author: string;
   note?: string;
+  audiobook?: boolean;
 }
 
 const BOOKS: Book[] = [
@@ -78,14 +80,26 @@ const BOOKS: Book[] = [
   { date: 'October 2026', title: 'Tales from the Gas Station Vol. 1', author: 'Jack Townsend' },
 ];
 
-const currentlyReading = BOOKS[BOOKS.length - 1];
-const pastBooks = [...BOOKS].reverse().slice(1);
+// Currently reading is always the most recent non-audiobook.
+const currentlyReading = [...BOOKS].reverse().find((book) => !book.audiobook);
+
+// Most recent audiobook listened to, shown less prominently.
+const currentAudiobook = [...BOOKS].reverse().find((book) => book.audiobook);
 
 interface ReadingListProps {
   onBack: () => void;
 }
 
 export default function ReadingList({ onBack }: ReadingListProps) {
+  const [showAudiobooks, setShowAudiobooks] = useState(true);
+
+  // Full history in reverse-chronological order, excluding the currently
+  // reading book. Audiobooks are filtered out when the switch is off.
+  const pastBooks = [...BOOKS]
+    .reverse()
+    .filter((book) => book !== currentlyReading)
+    .filter((book) => showAudiobooks || !book.audiobook);
+
   return (
     <div className={styles.container}>
       <button className={styles.backButton} onClick={onBack}>
@@ -94,12 +108,46 @@ export default function ReadingList({ onBack }: ReadingListProps) {
 
       <h1 className={styles.pageTitle}>Reading List</h1>
 
-      <section className={styles.currentlyReading}>
-        <h2 className={styles.currentLabel}>Currently Reading</h2>
-        <p className={styles.currentTitle}>{currentlyReading.title}</p>
-        <p className={styles.currentAuthor}>by {currentlyReading.author}</p>
-        <p className={styles.currentDate}>{currentlyReading.date}</p>
-      </section>
+      <div className={styles.switchRow}>
+        <label className={styles.switch}>
+          <input
+            type="checkbox"
+            role="switch"
+            checked={showAudiobooks}
+            onChange={(e) => setShowAudiobooks(e.target.checked)}
+            className={styles.switchInput}
+          />
+          <span className={styles.switchTrack} aria-hidden="true">
+            <span className={styles.switchThumb} />
+          </span>
+          <span className={styles.switchLabel}>Show audiobooks</span>
+        </label>
+      </div>
+
+      {currentlyReading && (
+        <section className={styles.currentlyReading}>
+          <h2 className={styles.currentLabel}>Currently Reading</h2>
+          <p className={styles.currentTitle}>{currentlyReading.title}</p>
+          <p className={styles.currentAuthor}>by {currentlyReading.author}</p>
+          <p className={styles.currentDate}>{currentlyReading.date}</p>
+        </section>
+      )}
+
+      {showAudiobooks && currentAudiobook && (
+        <section className={styles.currentAudiobook}>
+          <span className={styles.audiobookLabel}>Latest Audiobook</span>
+          <span className={styles.audiobookInfo}>
+            <span className={styles.audiobookTitle}>
+              {currentAudiobook.title}
+            </span>
+            <span className={styles.audiobookAuthor}>
+              {" "}
+              — {currentAudiobook.author}
+            </span>
+          </span>
+          <span className={styles.audiobookDate}>{currentAudiobook.date}</span>
+        </section>
+      )}
 
       <section className={styles.historySection}>
         <h2 className={styles.historyHeading}>Reading History</h2>
@@ -109,7 +157,12 @@ export default function ReadingList({ onBack }: ReadingListProps) {
               <span className={styles.bookDate}>{book.date}</span>
               <span className={styles.bookInfo}>
                 <span className={styles.bookTitle}>{book.title}</span>
-                {book.note && <span className={styles.bookNote}> ({book.note})</span>}
+                {book.audiobook && (
+                  <span className={styles.audiobookTag}> (audiobook)</span>
+                )}
+                {book.note && (
+                  <span className={styles.bookNote}> ({book.note})</span>
+                )}
                 <span className={styles.bookAuthor}> — {book.author}</span>
               </span>
             </li>
