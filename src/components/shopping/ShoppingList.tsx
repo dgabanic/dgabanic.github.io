@@ -28,10 +28,21 @@ export default function ShoppingList({ onBack }: ShoppingListProps) {
     Record<string, string>
   >({});
   const newStoreInputRef = useRef<HTMLInputElement>(null);
+  // True once the initial fetch has hydrated state. Used to suppress the
+  // remote write-back that would otherwise fire immediately after loading
+  // (which caused every page load to PATCH the just-fetched data back).
+  const skipNextRemoteSave = useRef(false);
 
   useEffect(() => {
     saveLocalStores(stores);
     if (!remoteAvailable) return;
+
+    // Skip the write triggered by hydrating state from the initial fetch;
+    // only persist genuine user edits to the shared Gist.
+    if (skipNextRemoteSave.current) {
+      skipNextRemoteSave.current = false;
+      return;
+    }
 
     saveStores(stores).catch(() => {
       setRemoteAvailable(false);
@@ -45,6 +56,9 @@ export default function ShoppingList({ onBack }: ShoppingListProps) {
     fetchStores()
       .then((remoteStores) => {
         if (!mounted) return;
+        // This state update feeds the save effect; mark it so the effect
+        // does not echo the freshly loaded data straight back to the Gist.
+        skipNextRemoteSave.current = true;
         setStores(remoteStores);
         saveLocalStores(remoteStores);
         setRemoteAvailable(true);
