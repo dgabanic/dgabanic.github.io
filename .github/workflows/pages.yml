@@ -25,7 +25,13 @@ jobs:
           node-version: '22'
           cache: 'npm'
       - run: npm ci
+      # NOTE: VITE_* vars are inlined into the public bundle at build time.
+      # The Gist token is therefore publicly extractable from the deployed
+      # site. Use a fine-grained PAT scoped to ONLY the "Gists" permission.
       - run: npm run build
+        env:
+          VITE_GIST_ID: ${{ secrets.VITE_GIST_ID }}
+          VITE_GIST_TOKEN: ${{ secrets.VITE_GIST_TOKEN }}
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
