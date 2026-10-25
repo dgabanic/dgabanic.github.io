@@ -78,8 +78,9 @@ const BOOKS: Book[] = [
   { date: 'September 2026', title: 'The Da Vinci Code', author: 'Dan Brown' },
   { date: 'September 2026', title: 'Warbreaker', author: 'Brandon Sanderson' },
   { date: 'October 2026', title: 'Tales from the Gas Station Vol. 1', author: 'Jack Townsend' },
-  { date: 'October 2026', title: 'There Is No Anti Memetics Division', author: 'QNTM' },
+  { date: 'October 2026', title: 'There Is No Antimemetics Division', author: 'QNTM' },
   { date: 'October 2026', title: 'Of Boys and Men', author: 'Richard V. Reeves', audiobook: true },
+  { date: 'October 2026', title: 'The Shadow of the Gods', author: 'John Gwynne' },
 ];
 
 // Currently reading is always the most recent non-audiobook.
